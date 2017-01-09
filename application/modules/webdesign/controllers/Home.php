@@ -10,10 +10,14 @@ class Home extends MAIN_Controller {
 	}
 
 	public function homepage(){
-		$data = array();
+
+		$data = array(
+			'video' => $this->config->item('webdesign_homepage_video')
+		);
 
 		$this->tpl->add_bootstrap();
-		$this->tpl->add_css('webdesign/js/homepage_player.css');
+		$this->tpl->add_css('webdesign/css/homepage_player.css');
+		$this->tpl->add_css('webdesign/css/custom.css');
 		$this->tpl->add_js_src('plugins/YTPlayer/jquery.mb.YTPlayer.js', true);
 		$this->tpl->add_js('$(document).ready(function () { $(".player").mb_YTPlayer(); });', true);
 

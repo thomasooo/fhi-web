@@ -1,0 +1,53 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar {
+	margin-bottom: 20px;
+	border: none;
+	background-color: inherit;
+}
+
+.navbar li{
+	color: #696969;
+	font-weight: bold;
+	font-size: smaller;
+}
+
+.red-nav{
+	margin-left: 3em;
+}
+
+.red-nav li a{
+	color: white;
+	background-color: red;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.btn-red{
+	color: #696969;
+	font-weight: bold;
+	font-size: smaller;
+}
+
+/* tu sa collapsuje menu */
+@media (min-width: 768px){
+
+	.navbar li.ml-bigger {
+		margin-left : 3em;
+	}
+
+	.btn-red{
+		color: #fff;
+		background-color: #EC3713;
+		border-color: #EC3713;
+		font-size: inherit;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+
+}
