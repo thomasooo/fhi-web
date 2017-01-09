@@ -22,7 +22,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">WEBDESIGN LOGO</a>
+					<a class="navbar-brand" href="#"><img class="header-logo" src="<?=base_url('webdesign/images/logo.png')?>" alt="logo"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">

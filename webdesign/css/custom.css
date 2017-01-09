@@ -53,6 +53,14 @@ body {
 	margin: 1em 0;
 }
 
+.header-logo{
+	height: 50px;
+}
+
+.footer-logo{
+	height: 50px;
+}
+
 /* collaps menu action */
 @media (min-width: 768px){
 
