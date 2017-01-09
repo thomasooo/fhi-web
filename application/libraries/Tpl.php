@@ -95,6 +95,7 @@ Class Tpl{
 
 	public function add_bootstrap(){
 		$this->add_css('bootstrap/css/bootstrap.min.css');
+		$this->add_css('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css', true);
 		$this->add_js_src('plugins/jQuery/jquery-2.2.3.min.js', true);
 		$this->add_js_src('bootstrap/js/bootstrap.min.js', true);
 	}
