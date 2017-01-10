@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$allowed_domains = array('fhi-webdesign.local');
-$default_domain  = 'fhi-webdesign.local';
+$allowed_domains = array('fhi-web.poriadne.sk', 'fhi-webdesign.local');
+$default_domain  = 'fhi-web.poriadne.sk';
 $all_domains_allowed = false; //true is not secure
 
 if ($all_domains_allowed || in_array($_SERVER['HTTP_HOST'], $allowed_domains, TRUE)){
