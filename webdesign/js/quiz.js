@@ -68,7 +68,8 @@ function ajax_call(qnum, answer){
 	})
 	.done(function(res) {
 		if(res.message == 'question'){
-			set_quiz(res.result.number, res.result.quetions, res.result.answers.a, res.result.answers.b, res.result.answers.c, res.result.answers.d);
+			console.log(res.result);
+			set_quiz(res.result.number, res.result.question, res.result.answers.a, res.result.answers.b, res.result.answers.c, res.result.answers.d);
 		}else if(res.message == 'result'){
 			window.location = quiz_result_url;
 		}else{

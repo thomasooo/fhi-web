@@ -14,7 +14,7 @@
 			'correct' => 'b'
 		),
 		2 => array(
-			'question' => 'Na akých doménach bývajú webové stránky armády?',
+			'question' => 'Na akej doméne bývajú webové stránky armády?',
 			'answers' => array(
 				'a' => '.mil',
 				'b' => '.army',
