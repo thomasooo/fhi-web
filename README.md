@@ -10,7 +10,7 @@
 
 - /webdesign/*
 - /application/core/MAIN_Controller.php
-- /application/libraries/tpl.php
+- /application/libraries/Tpl.php
 - /application/views/header.php
 - /application/views/footer.php
 - /application/modules/webdesign/*
