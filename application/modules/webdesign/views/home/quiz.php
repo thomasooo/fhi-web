@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-4">
 					<div class="quiz-margin">
-						<h2 class="quiz-header">1. Nadpis quizu</h2>
+						<h2 class="quiz-header"><span id="quiz-question-num">1</span>. <span id="quiz-question"><?=$q['question']?></span></h2>
 					</div>
 				</div>
 			</div>
@@ -20,15 +20,17 @@
 					<div class="row quiz-qrow1">
 						<div class="col-md-6">
 							<div class="quiz-question-animation">
+								<span class="hidden quiz-answer-val">a</span>
 								<div class="quiz-qnum">A.</div>
-								<div class="quiz-qanswer">This is my answer 1.</div>
+								<div class="quiz-qanswer" id="ans-a"><?=$q['answers']['a']?></div>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="quiz-question-animation">
+								<span class="hidden quiz-answer-val">b</span>
 								<div class="quiz-qnum">B.</div>
-								<div class="quiz-qanswer">This is my answer 2.</div>
+								<div class="quiz-qanswer" id="ans-b"><?=$q['answers']['b']?></div>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -36,15 +38,17 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="quiz-question-animation">
+								<span class="hidden quiz-answer-val">c</span>
 								<div class="quiz-qnum">C.</div>
-								<div class="quiz-qanswer">This is my answer 3.</div>
+								<div class="quiz-qanswer" id="ans-c"><?=$q['answers']['c']?></div>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="quiz-question-animation">
+								<span class="hidden quiz-answer-val">d</span>
 								<div class="quiz-qnum">D.</div>
-								<div class="quiz-qanswer">This is my answer 4. </div>
+								<div class="quiz-qanswer" id="ans-d"><?=$q['answers']['d']?></div>
 								<div class="clearfix"></div>
 							</div>
 						</div>
