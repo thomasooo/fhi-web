@@ -7,9 +7,12 @@ class Home extends MAIN_Controller {
 		parent::__construct();
 
 		$this->load->config('webdesign/webdesign');
+
+		$this->data['footer_class'] = 'grey-bg';
 	}
 
 	public function homepage(){
+		$this->data['footer_class'] = ''; //odstranenie grey class z footera
 
 		$data = array(
 			'video' => $this->config->item('webdesign_homepage_video')
@@ -23,6 +26,18 @@ class Home extends MAIN_Controller {
 
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/home/homepage', $data);
+		$this->load->view('footer');
+	}
+
+	public function quiz(){
+		$data = array();
+
+		$this->tpl->add_bootstrap();
+		$this->tpl->add_css('webdesign/css/custom.css');
+		$this->tpl->add_css('webdesign/css/quiz.css');
+
+		$this->load->view('header', $this->data);
+		$this->load->view('webdesign/home/quiz', $data);
 		$this->load->view('footer');
 	}
 

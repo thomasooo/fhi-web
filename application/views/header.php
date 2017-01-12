@@ -22,16 +22,16 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img class="header-logo" src="<?=base_url('webdesign/images/logo.png')?>" alt="logo"></a>
+					<a class="navbar-brand" href="<?=base_url()?>"><img class="header-logo" src="<?=base_url('webdesign/images/logo.png')?>" alt="logo"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
+						<li class="active"><a href="<?=base_url()?>">Home <span class="sr-only">(current)</span></a></li>
 						<li><a href="#">First</a></li>
 						<li><a href="#">Second</a></li>
 						<li class="ml-bigger">
 							<div class="btn-nav">
-								<a class="btn btn-red btn-small navbar-btn" href="#">RED BTTN</a>
+								<a class="btn btn-red btn-small navbar-btn" href="<?=site_url('webdesign/home/quiz')?>">QUIZ</a>
 							</div>
 						</li>
 					</ul>

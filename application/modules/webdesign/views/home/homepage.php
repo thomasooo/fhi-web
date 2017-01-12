@@ -1,5 +1,5 @@
 <!--Video Section-->
-<section class="content-section video-section">
+<section class="content-section video-section bottom-grey-border">
 	<div class="pattern-overlay">
 		<a id="bgndVideo" class="player" data-property="{videoURL:'<?=$video?>',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
 		<div class="container">

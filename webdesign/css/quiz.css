@@ -1,0 +1,36 @@
+.quiz-margin{
+	margin: 2em 0;
+}
+
+.quiz-header{
+	font-weight: bold;
+}
+
+.quiz-container{
+	padding: 10px 0;
+}
+
+.quiz-qnum{
+	padding: .5em;
+	margin: .25em;
+	width: 2.5em;
+	background-color: #EC3713;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-radius: 5px;
+	display: inline-block;
+	float:left;
+}
+
+.quiz-qanswer{
+	padding: .5em;
+	margin-left: 10px;
+	display: inline-block;
+	float:left;
+}
+
+.quiz-qrow1{
+	margin-bottom: 2em;
+}
