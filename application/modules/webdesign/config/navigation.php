@@ -6,9 +6,9 @@
 			'label' => 'Domov',
 			'site_url' => 'webdesign/home/homepage'
 		),
-		'second' => array(
+		'html5' => array(
 			'active' => false,
-			'label' => 'Prvá',
-			'site_url' => 'webdesign/home/homepage'
+			'label' => 'HTML5',
+			'site_url' => 'webdesign/twitter/tag/html5'
 		),
 	);
