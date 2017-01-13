@@ -5,8 +5,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Full Width Video</h1>
-					<h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
+					<h1>BG VIDEO</h1>
+					<h3>PHP commits</h3>
 				</div>
 			</div>
 		</div>

@@ -22,6 +22,7 @@ class Home extends MAIN_Controller {
 		$this->tpl->add_js_src('plugins/YTPlayer/jquery.mb.YTPlayer.js', true);
 		$this->tpl->add_js('$(document).ready(function () { $(".player").mb_YTPlayer(); });', true);
 
+		$this->_active_nav('homepage');
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/home/homepage', $data);
 		$this->load->view('footer');

@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-	$config['webdesign_homepage_video'] = 'https://www.youtube.com/watch?v=fdJc1_IBKJA';
+	$config['webdesign_homepage_video'] = 'https://www.youtube.com/watch?v=VDBYMFGPm1w';
 	$config['webdesign_email_from'] = 'fhi-web@poriadne.sk';
 	$config['webdesign_email_name_from'] = 'FHI WEB poriande.sk';
 

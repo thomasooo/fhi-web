@@ -27,9 +27,9 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="<?=base_url()?>">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">First</a></li>
-						<li><a href="#">Second</a></li>
+						<?php foreach($navigation as $nav): ?>
+							<li<?php if($nav['active']): ?> class="active"<?php endif; ?>><a href="<?=site_url($nav['site_url'])?>"><?=$nav['label']?><?php if($nav['active']): ?> <span class="sr-only">(current)</span><?php endif; ?></a></li>
+						<?php endforeach; ?>
 						<li class="ml-bigger">
 							<div class="btn-nav">
 								<a class="btn btn-red btn-small navbar-btn" href="<?=site_url('webdesign/home/quiz')?>">QUIZ</a>
