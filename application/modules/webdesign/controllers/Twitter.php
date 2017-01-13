@@ -16,28 +16,25 @@ class Twitter extends MAIN_Controller {
 			redirect('home');
 		}
 
-		$feed = $this->twitter_lib->get_by_hashtag($tag);
+		$feed = $this->twitter_lib->get_formatted_by_hashtag($tag);
 
 		if(!$feed || !is_array($feed)){
 			redirect('webdesign/twitter/empty_feed');
 		}
-debug($feed);
-		foreach($feed as $f){
-			echo "Time and Date of Tweet: ".$f['created_at']."<br />";
-			echo "Tweet: ". $f['text']."<br />";
-			echo "Tweeted by: ". $f['user']['name']."<br />";
-			echo "Screen name: ". $f['user']['screen_name']."<br />";
-			echo "Followers: ". $f['user']['followers_count']."<br />";
-			echo "Friends: ". $f['user']['friends_count']."<br />";
-			echo "Listed: ". $f['user']['listed_count']."<br /><hr />";
-			echo "User url: ". $f['user']['url']."<br /><hr />";
-			echo "BG: <img src=\"". $f['user']['profile_background_image_url']."\" /><br /><hr />";
-			echo "Profile: <img src=\"". $f['user']['profile_image_url']."\" /><br /><hr />";
-			if(isset($f['entities']['media'][0]['media_url'])){
-				echo "Media: <img src=\"". $f['entities']['media'][0]['media_url']."\" /><br /><hr />";
-			}
 
-		}
+		$data = array(
+			'feed' => $feed,
+			'tag' => $tag
+		);
+
+		$this->tpl->add_bootstrap();
+		$this->tpl->add_css('webdesign/css/custom.css');
+		$this->tpl->add_css('webdesign/css/twitter.css');
+
+		$this->_active_nav($tag);
+		$this->load->view('header', $this->data);
+		$this->load->view('webdesign/twitter/tag', $data);
+		$this->load->view('footer');
 	}
 
 	public function empty_feed(){

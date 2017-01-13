@@ -75,6 +75,14 @@ body {
 	margin-right: 1em;
 }
 
+a{
+	color: #A51B00;
+}
+
+a:hover{
+	color: #D42200;
+}
+
 /* collaps menu action */
 @media (min-width: 768px){
 

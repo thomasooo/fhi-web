@@ -2,7 +2,11 @@
 
 //aby niekto nepodstrcil nieco ine
 $config['wedesign_enabled_tags'] = array(
-	'html5'
+	'html5',
+	'css3',
+	'bootstrap',
+	'php',
+	'fun'
 );
 
 //http://fhi-webdesign.local/
