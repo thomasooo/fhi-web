@@ -38,7 +38,7 @@ class Home extends MAIN_Controller {
 		$questions = $this->config->item('webdesign_quiz');
 
 		$data = array(
-			'q' => $questions[1]
+			'q' => $questions[1] //inicializacia - vykreslenie prvej otazky
 		);
 
 		$this->tpl->add_bootstrap();
@@ -54,18 +54,26 @@ class Home extends MAIN_Controller {
 
 	public function quiz_result(){
 		$this->load->library('webdesign/quiz_help', null, 'quiz');
-
 		$questions = $this->config->item('webdesign_quiz');
-		$last_q = count($questions);
 
-		if($last_q != ($this->quiz->get_current() - 1)){
-			debug('fail', true);
-			//TODO error
+		//vygeneruje vysledok kvizu
+		$result = $this->quiz->generate_result($questions);
+		if(!$result || !is_array($result)){
+			//pri faile redirectne na quiz
+			redirect('webdesign/home/quiz');
 		}
 
-		$result = $this->quiz->get_answers();
+		$data = array(
+			'result' => $result
+		);
 
-		debug($result, true);
+		$this->tpl->add_bootstrap();
+		$this->tpl->add_css('webdesign/css/custom.css');
+		$this->tpl->add_css('webdesign/css/quiz.css');
+
+		$this->load->view('header', $this->data);
+		$this->load->view('webdesign/home/quiz_result', $data);
+		$this->load->view('footer');
 	}
 
 }

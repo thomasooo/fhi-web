@@ -31,6 +31,60 @@ class Quiz_help {
 		return $this->answers;
 	}
 
+	public function generate_result($questions = array()){
+		if(!is_array($questions)){
+			return false;
+		}
+
+		$last_q = count($questions);
+		if($last_q != ($this->get_current() - 1)){
+			return false;
+		}
+
+		$result = array(
+			'counts' => array(
+				'correct' => 0,
+				'total' => $last_q
+			),
+			'results' => array()
+		);
+
+		$answers = $this->get_answers();
+		foreach($answers as $key => $answer) {
+			//neexistujuca moznost
+			if(!isset($questions[$key])){
+				return false;
+			}
+
+			$corr = $questions[$key]['correct'];
+			$result['results'][$key] = array(
+				'correct' => false,
+				'your_answer' => $answer,
+				'correct_answer' => $corr,
+				'question' => $questions[$key]['question'],
+				'answers' => $questions[$key]['answers'],
+				'classes' => array()
+			);
+
+			foreach($questions[$key]['answers'] as $k => $val){
+				$result['results'][$key]['classes'][$k] = '';
+				if($answer == $k){
+					$result['results'][$key]['classes'][$k] = 'quiz-ans-selected';
+				}
+				if($corr == $k){
+					$result['results'][$key]['classes'][$k] = 'quiz-ans-correct';
+				}
+			}
+
+			if($corr == $answer){
+				$result['results'][$key]['correct'] = true;
+				$result['counts']['correct']++;
+			}
+		}
+
+		return $result;
+	}
+
 	public function set_initial_question($q = 0){
 		$this->current_question = $q; //nastavime o jedu mensie
 		$this->save_sess();
