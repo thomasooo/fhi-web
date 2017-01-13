@@ -7,8 +7,6 @@ class Home extends MAIN_Controller {
 		parent::__construct();
 
 		$this->load->config('webdesign/webdesign');
-
-		$this->data['footer_class'] = 'grey-bg';
 	}
 
 	public function homepage(){
@@ -107,7 +105,7 @@ class Home extends MAIN_Controller {
 		foreach($result['results'] as $k => $v){
 			$correct = 'NESPRÁVNE';
 			if($v['your_answer'] == $v['correct_answer']){
-				$correct = 'SPRÁNVE';
+				$correct = 'SPRÁVNE';
 			}
 
 			$data = array(

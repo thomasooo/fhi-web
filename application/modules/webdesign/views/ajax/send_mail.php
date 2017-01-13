@@ -63,10 +63,12 @@
 	}
 
 	.quiz-ans-selected{
+		border: 1px solid red;
 		box-shadow: 0px 0px 8px rgba(203, 0, 0, 0.6);
 	}
 
 	.quiz-ans-correct{
+		border: 1px solid  green;
 		box-shadow: 0px 0px 8px rgba(13, 171, 0, 0.8);
 	}
 
@@ -80,22 +82,68 @@
 				<h3 class="quiz-res-header"><?=$k?>. <?=$r['question']?></h3>
 				<div class="quiz-question <?=$r['classes']['a']?>">
 					<div class="quiz-qnum">A.</div>
-					<div class="quiz-qanswer"><?=$r['answers']['a']?></div>
+					<div class="quiz-qanswer"><?=$r['answers']['a']?>
+						<?php if($r['classes']['a'] == 'quiz-ans-correct'): ?>
+							<span style="display: none;">
+								- správna odpoveď
+							</span>
+						<?php endif; ?>
+						<?php if($r['classes']['a'] == 'quiz-ans-selected'): ?>
+							<span style="display: none;">
+								- tvoj výber
+							</span>
+						<?php endif; ?>
+					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="quiz-question <?=$r['classes']['b']?>">
 					<div class="quiz-qnum">B.</div>
-					<div class="quiz-qanswer"><?=$r['answers']['b']?></div>
+					<div class="quiz-qanswer"><?=$r['answers']['b']?>
+						<?php if($r['classes']['b'] == 'quiz-ans-correct'): ?>
+							<span style="display: none !important;">
+								- správna odpoveď
+							</span>
+						<?php endif; ?>
+						<?php if($r['classes']['b'] == 'quiz-ans-selected'): ?>
+							<span style="display: none !important;">
+								- tvoj výber
+							</span>
+						<?php endif; ?>
+					</div>
+
 					<div class="clearfix"></div>
 				</div>
 				<div class="quiz-question <?=$r['classes']['c']?>">
 					<div class="quiz-qnum">C.</div>
-					<div class="quiz-qanswer"><?=$r['answers']['c']?></div>
+					<div class="quiz-qanswer"><?=$r['answers']['c']?>
+						<?php if($r['classes']['c'] == 'quiz-ans-correct'): ?>
+							<span style="display: none !important;">
+								- správna odpoveď
+							</span>
+						<?php endif; ?>
+						<?php if($r['classes']['c'] == 'quiz-ans-selected'): ?>
+							<span style="display: none !important;">
+								- tvoj výber
+							</span>
+						<?php endif; ?>
+					</div>
+
 					<div class="clearfix"></div>
 				</div>
 				<div class="quiz-question <?=$r['classes']['d']?>">
 					<div class="quiz-qnum">D.</div>
-					<div class="quiz-qanswer"><?=$r['answers']['d']?></div>
+					<div class="quiz-qanswer"><?=$r['answers']['d']?>
+						<?php if($r['classes']['d'] == 'quiz-ans-correct'): ?>
+							<span style="display: none !important;">
+								- správna odpoveď
+							</span>
+						<?php endif; ?>
+						<?php if($r['classes']['d'] == 'quiz-ans-selected'): ?>
+							<span style="display: none !important;">
+								- tvoj výber
+							</span>
+						<?php endif; ?>
+					</div>
 					<div class="clearfix"></div>
 				</div>
 			<?php endforeach; ?>

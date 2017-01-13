@@ -13,6 +13,8 @@ class MAIN_Controller extends CI_Controller {
 		$this->data = array();
 		$this->load->library('tpl');
 		$this->tpl->title(); //donutime nacitat titulok z configu tpl.php
+
+		$this->data['footer_class'] = 'grey-bg';
 	}
 
 }
