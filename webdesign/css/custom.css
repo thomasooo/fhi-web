@@ -22,17 +22,17 @@ body {
 
 .red-nav li a{
 	color: white;
-	background-color: red;
 }
 
 .btn{
 	border-radius: 0;
 }
 
-.btn-red{
-	color: #696969;
+.btn-red, .btn-red-intext{
+	color: white;
 	font-weight: bold;
 	font-size: smaller;
+	background-color: #EC3713;
 }
 
 .footcontainer h2{
@@ -68,6 +68,11 @@ body {
 
 .grey-bg{
 	background-color: #E4E4E4;
+}
+
+.btn-mr{
+	display: inline-block;
+	margin-right: 1em;
 }
 
 /* collaps menu action */

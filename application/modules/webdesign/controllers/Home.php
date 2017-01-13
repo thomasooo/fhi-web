@@ -76,4 +76,52 @@ class Home extends MAIN_Controller {
 		$this->load->view('footer');
 	}
 
+	public function export_csv(){
+		$this->load->library('webdesign/quiz_help', null, 'quiz');
+		$questions = $this->config->item('webdesign_quiz');
+
+		//vygeneruje vysledok kvizu
+		$result = $this->quiz->generate_result($questions);
+		if(!$result || !is_array($result)){
+			//pri faile redirectne na quiz
+			redirect('webdesign/home/quiz');
+		}
+
+		$out = fopen('php://output', 'w');
+
+		$data = array(
+			'OTÁZKA',
+			'MOŽNÉ ODPOVEDE',
+			'TVOJA ODPOVEĎ',
+			'SPRÁVNA ODPOVEĎ',
+			'VÝSLEDOK'
+		);
+
+		fprintf($out, chr(0xEF).chr(0xBB).chr(0xBF)); //UTF-8
+		fputcsv($out, $data);
+
+		foreach($result['results'] as $k => $v){
+			$correct = 'NESPRÁVNE';
+			if($v['your_answer'] == $v['correct_answer']){
+				$correct = 'SPRÁNVE';
+			}
+
+			$data = array(
+				$k.'. '.$v['question'],
+				'a. '.$v['answers']['a']."\n".'b. '.$v['answers']['b']."\n".'c. '.$v['answers']['c']."\n".'d. '.$v['answers']['d']."\n",
+				$v['your_answer'].'. '.$v['answers'][$v['your_answer']],
+				$v['correct_answer'].'. '.$v['answers'][$v['correct_answer']],
+				$correct
+			);
+
+			fputcsv($out, $data);
+		}
+
+		header('Content-Type: application/csv');
+		header('Content-Disposition: attachment; filename="result_'.date("Y-m-d_H:i:s").'.csv";');
+		fpassthru($out);
+		fclose($out);
+		exit;
+	}
+
 }

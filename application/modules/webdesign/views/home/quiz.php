@@ -1,8 +1,8 @@
-<!--Quiz Header Section-->
+<!--Quiz Section-->
 <section class="content-section">
 	<div class="grey-bg bottom-grey-border">
 		<div class="container">
-			<!-- Example row of columns -->
+			<!-- row of columns -->
 			<div class="row">
 				<div class="col-md-8 col-md-offset-4">
 					<div class="quiz-margin">
@@ -13,7 +13,7 @@
 		</div> <!-- /container -->
 	</div>
 	<div class="container quiz-container">
-		<!-- Example row of columns -->
+		<!-- row of columns -->
 		<div class="row quiz">
 			<div class="col-md-8 col-md-offset-4 text-center">
 				<div class="quiz-margin">
