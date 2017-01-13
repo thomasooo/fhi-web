@@ -20,7 +20,7 @@
 					<div class="row quiz-qrow1">
 						<div class="col-md-12">
 							<a href="<?=site_url('webdesign/home/export_csv')?>" class="btn btn-red-intext btn-mr"><i class="fa fa-table" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;EXPORT DO CSV</a>
-							<a href="#" class="btn btn-red-intext btn-mr"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;POSLAŤ NA E-MAIL</a>
+							<a href="javascript: void(0)" onclick="send_email()" class="btn btn-red-intext btn-mr"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;POSLAŤ NA E-MAIL</a>
 						</div>
 					</div>
 				</div>

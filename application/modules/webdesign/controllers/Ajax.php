@@ -54,4 +54,47 @@ class Ajax extends MAIN_Controller {
 		exit;
 	}
 
+	public function send_mail(){
+		$this->load->library('webdesign/quiz_help', null, 'quiz');
+		$this->load->library('email');
+		$this->load->helper('email');
+
+		$recipient = $this->input->post('recipient');
+
+		if(!valid_email($recipient)){
+			echo 'Nebol zadaný valídny e-mail.';
+			exit;
+		}
+
+		$questions = $this->config->item('webdesign_quiz');
+
+		//vygeneruje vysledok kvizu
+		$result = $this->quiz->generate_result($questions);
+		if(!$result || !is_array($result)){
+			echo 'Výsledok testu sa nepodarilo vygenerovať.';
+			exit;
+		}
+
+		$data = array(
+			'result' => $result
+		);
+
+		$message = $this->load->view('webdesign/ajax/send_mail', $data, true); //HTML obsah mailu
+
+		$this->email
+		->from($this->config->item('webdesign_email_from'), $this->config->item('webdesign_emailname_from'))
+		->to($recipient)
+		->subject('Výsledok kvízu')
+		->message($message)
+		->set_mailtype('html');
+
+		if(!$this->email->send()){
+			echo 'E-mail sa nepodarilo odoslať.';
+			exit;
+		}
+
+		echo 'E-mail bol úspešne odoslaný';
+		exit;
+	}
+
 }

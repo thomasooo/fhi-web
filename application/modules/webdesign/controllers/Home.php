@@ -70,9 +70,13 @@ class Home extends MAIN_Controller {
 		$this->tpl->add_bootstrap();
 		$this->tpl->add_css('webdesign/css/custom.css');
 		$this->tpl->add_css('webdesign/css/quiz.css');
+		$this->tpl->add_js_src('webdesign/js/quiz_result.js', true);
+		$this->tpl->add_js("var ajax_send_email_url = '".site_url('webdesign/ajax/send_mail')."';", true);
 
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/home/quiz_result', $data);
+		$this->load->view('webdesign/modals/send_mail');
+		$this->load->view('webdesign/modals/message');
 		$this->load->view('footer');
 	}
 

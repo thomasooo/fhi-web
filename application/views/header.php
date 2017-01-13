@@ -11,6 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div class="loader"><div class="txt text-center"><i class="fa fa-spinner fa-spin"></i> </div></div>
 	<div class="container">
 		<!-- Static navbar -->
 		<nav class="navbar navbar-default">
