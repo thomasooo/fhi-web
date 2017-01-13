@@ -28,7 +28,7 @@
 		),
 		'fun' => array(
 			'active' => false,
-			'label' => 'FUN',
+			'label' => 'ZÁBAVA',
 			'site_url' => 'webdesign/twitter/tag/fun'
 		),
 	);

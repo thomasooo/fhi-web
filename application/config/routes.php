@@ -50,6 +50,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+$route['kviz'] = 'webdesign/home/quiz';
+$route['kviz/vysledok'] = 'webdesign/home/quiz_result';
+$route['novinky/(:any)'] = 'webdesign/twitter/tag/$1';
+
+$route['domov'] = 'webdesign/home/homepage';
 $route['home'] = 'webdesign/home/homepage';
 $route['default_controller'] = 'webdesign/home/homepage';
 $route['404_override'] = '';

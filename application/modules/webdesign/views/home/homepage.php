@@ -5,8 +5,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>BG VIDEO</h1>
-					<h3>PHP commits</h3>
+					<h1>VÝVOJ PHP</h1>
+					<h3>video na pozadí</h3>
 				</div>
 			</div>
 		</div>

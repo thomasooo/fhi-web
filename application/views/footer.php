@@ -5,10 +5,13 @@
 			<div class="row">
 				<div class="col-md-4">
 					<h2><img class="header-logo" src="<?=base_url('webdesign/images/logo.png')?>" alt="logo"></h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p class="text-justify">
+						Tento web slúži ako projekt na predmet Webové aplikácie a webový dizajn. Obsahuje API na načítavanie postov z twittera a AJAXový kvíz s vyhodnotením. Vyhodnotenie kvízu je možné exportovať ako CSV, alebo zaslať na e-mail v HTML formáte.
+						Web je vytvorený za pomoci frameworkov bootstrap a CodeIgniter.
+					</p>
 				</div>
 				<div class="col-md-4">
-					<h2>WE`RE HERE TO HELP YOU</h2>
+					<h2>KDE NÁS NÁJDETE</h2>
 					<p>
 						<ul class="list-unstyled list-footer-black">
 							<li><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">2963 Charmaine Lane, Amarillo</a></li>
@@ -18,7 +21,7 @@
 					</p>
 				</div>
 				<div class="col-md-4">
-					<h2>FOLLOW US</h2>
+					<h2>SLEDUJTE NÁS</h2>
 					<p class="follow-us">
 						<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -27,9 +30,9 @@
 				</div>
 			</div>
 
-			<hr>
+			<hr />
 
-			<p>&copy; 2016 Company, Inc.</p>
+			<p>&copy; 2017 Tom &amp; Tom</p>
 
 		</div> <!-- /container -->
 	</div>

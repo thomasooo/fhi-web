@@ -9,6 +9,8 @@
 	<?=$template['js'];?>
 	<title><?=$template['title']?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="<?=base_url('favicon.ico')?>" type="image/x-icon">
+	<link rel="icon" href="<?=base_url('favicon.ico')?>" type="image/x-icon">
 </head>
 <body>
 	<div class="loader"><div class="txt text-center"><i class="fa fa-spinner fa-spin"></i> </div></div>
@@ -32,7 +34,7 @@
 						<?php endforeach; ?>
 						<li class="ml-bigger">
 							<div class="btn-nav">
-								<a class="btn btn-red btn-small navbar-btn" href="<?=site_url('webdesign/home/quiz')?>">QUIZ</a>
+								<a class="btn btn-red btn-small navbar-btn" href="<?=site_url('webdesign/home/quiz')?>">KVÍZ</a>
 							</div>
 						</li>
 					</ul>
