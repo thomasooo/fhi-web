@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['kviz'] = 'webdesign/home/quiz';
 $route['kviz/vysledok'] = 'webdesign/home/quiz_result';
+$route['novinky/chyba'] = 'webdesign/twitter/empty_feed';
 $route['novinky/(:any)'] = 'webdesign/twitter/tag/$1';
 
 $route['domov'] = 'webdesign/home/homepage';

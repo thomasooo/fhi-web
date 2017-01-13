@@ -6,8 +6,8 @@
 				<div class="col-md-4">
 					<h2><img class="header-logo" src="<?=base_url('webdesign/images/logo.png')?>" alt="logo"></h2>
 					<p class="text-justify">
-						Tento web slúži ako projekt na predmet Webové aplikácie a webový dizajn. Obsahuje API na načítavanie postov z twittera a AJAXový kvíz s vyhodnotením. Vyhodnotenie kvízu je možné exportovať ako CSV, alebo zaslať na e-mail v HTML formáte.
-						Web je vytvorený za pomoci frameworkov bootstrap a CodeIgniter.
+						Tento web slúži ako projekt na predmet Webové aplikácie a webový dizajn. Obsahuje API na načítavanie postov z <?=anchor('webdesign/twitter/tag/twitter', 'twitteru')?> a <?=anchor('webdesign/twitter/tag/javascript', 'AJAX')?>ový kvíz s vyhodnotením. Vyhodnotenie kvízu je možné exportovať ako CSV, alebo zaslať na e-mail v HTML formáte.
+						Web je vytvorený za pomoci frameworkov <?=anchor('webdesign/twitter/tag/bootstrap', 'bootstrap')?> a <?=anchor('webdesign/twitter/tag/codeigniter', 'CodeIgniter')?>.
 					</p>
 				</div>
 				<div class="col-md-4">

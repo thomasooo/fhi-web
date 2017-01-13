@@ -38,9 +38,13 @@ class Twitter extends MAIN_Controller {
 	}
 
 	public function empty_feed(){
-		//TODO
+		$this->tpl->add_bootstrap();
+		$this->tpl->add_css('webdesign/css/custom.css');
+		$this->tpl->add_css('webdesign/css/twitter.css');
 
-		debug('NEPODARILO SA ZISKAT ZAZNAMY', true);
+		$this->load->view('header', $this->data);
+		$this->load->view('webdesign/twitter/empty_feed');
+		$this->load->view('footer');
 	}
 
 }

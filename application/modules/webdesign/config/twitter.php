@@ -6,7 +6,10 @@ $config['wedesign_enabled_tags'] = array(
 	'css3',
 	'bootstrap',
 	'php',
-	'fun'
+	'fun',
+	'codeigniter',
+	'javascript',
+	'twitter'
 );
 
 //http://fhi-webdesign.local/
