@@ -82,7 +82,7 @@ class Ajax extends MAIN_Controller {
 		$message = $this->load->view('webdesign/ajax/send_mail', $data, true); //HTML obsah mailu
 
 		$this->email
-		->from($this->config->item('webdesign_email_from'), $this->config->item('webdesign_emailname_from'))
+		->from($this->config->item('webdesign_email_from'), $this->config->item('webdesign_email_name_from'))
 		->to($recipient)
 		->subject('Výsledok kvízu')
 		->message($message)

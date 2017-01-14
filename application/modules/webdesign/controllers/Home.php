@@ -19,7 +19,7 @@ class Home extends MAIN_Controller {
 		$this->tpl->add_bootstrap();
 		$this->tpl->add_css('webdesign/css/homepage_player.css');
 		$this->tpl->add_css('webdesign/css/custom.css');
-		$this->tpl->add_js_src('plugins/YTPlayer/jquery.mb.YTPlayer.js', true);
+		$this->tpl->add_js_src('plugins/YTPlayer/jquery.mb.YTPlayer.min.js', true);
 		$this->tpl->add_js('$(document).ready(function () { $(".player").mb_YTPlayer(); });', true);
 
 		$this->_active_nav('homepage');

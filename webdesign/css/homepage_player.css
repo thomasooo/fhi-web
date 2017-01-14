@@ -1,3 +1,7 @@
+.video-section {
+	background-image: url('../images/ytplayer-background.png');
+}
+
 .video-section .pattern-overlay {
 	background-color: rgba(71, 71, 71, 0.59);
 	padding: 110px 0 32px;
@@ -10,7 +14,7 @@
 }
 
 .video-section h1{
-	font-size:110px;
+	font-size:90px;
 	font-weight:bold;
 	text-transform: uppercase;
 	margin: 40px auto 0px;

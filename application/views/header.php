@@ -8,7 +8,7 @@
 	<?=$template['js_src'];?>
 	<?=$template['js'];?>
 	<title><?=$template['title']?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="<?=base_url('favicon.ico')?>" type="image/x-icon">
 	<link rel="icon" href="<?=base_url('favicon.ico')?>" type="image/x-icon">
 </head>
