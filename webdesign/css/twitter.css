@@ -62,3 +62,11 @@
 	}
 
 }
+
+.hidden-anim{
+	opacity: 0;
+}
+
+.visible-anim{
+	opacity: 1;
+}

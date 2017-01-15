@@ -30,6 +30,9 @@ class Twitter extends MAIN_Controller {
 		$this->tpl->add_bootstrap();
 		$this->tpl->add_css('webdesign/css/custom.css');
 		$this->tpl->add_css('webdesign/css/twitter.css');
+		$this->tpl->add_css('plugins/scroll-effects/animate.css');
+		$this->tpl->add_js_src('plugins/scroll-effects/viewportchecker.js', true);
+		$this->tpl->add_js_src('webdesign/js/twitter_tag.js', true);
 
 		$this->_active_nav($tag);
 		$this->load->view('header', $this->data);

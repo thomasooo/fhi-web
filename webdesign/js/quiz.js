@@ -48,8 +48,6 @@ function disable_quiz(){
 }
 
 function enable_quiz(){
-	$('.quiz').fadeOut(10);
-	$('.quiz').fadeIn('fast');
 	quiz_disabled = false;
 	$('.quiz-qanswer').css('color', orig_answer_color);
 	$('.quiz-header').css('color', orig_header_color);
