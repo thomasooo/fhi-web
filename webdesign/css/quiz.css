@@ -54,10 +54,6 @@
 	float:left;
 }
 
-.quiz-question{
-	cursor:default;
-}
-
 .quiz-question-animation, .quiz-question{
 	z-index: 1;
 	margin: 0 2em;
@@ -94,6 +90,10 @@
 		-moz-transform: scale(1.1, 1.1);
 		-o-transform: scale(1.1, 1.1);
 	}
+}
+
+.quiz-question{
+	cursor:default;
 }
 
 .quiz-ans-selected{
