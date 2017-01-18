@@ -6,52 +6,52 @@
 
 	$config['webdesign_quiz'] = array(
 		1 => array(
-			'question' => 'Na čo slúži v unixe príkaz ls?',
+			'question' => 'Na ktoré elementy sa v CSS vzťahuje "div&gt;p"?',
 			'answers' => array(
-				'a' => 'Na zobrazenie aktuálnych procesov systému.',
-				'b' => 'Na vylistovanie obsahu aktuálneho adresára.',
-				'c' => 'Na otvorenie textového editora.',
-				'd' => 'Príkaz ls neexistuje.'
+				'a' => 'Všetky "p" elementy, ktoré nie sú uzavreté v "div".',
+				'b' => 'Všetky "p" elementy, ktorých rodičovský element je "div".',
+				'c' => 'Všetky "div" elementy, ktorých rodičovský element je "p".',
+				'd' => 'V CSS takýto selector neexistuje.'
 			),
 			'correct' => 'b'
 		),
 		2 => array(
-			'question' => 'Na akej doméne bývajú webové stránky armády?',
+			'question' => 'Ktoré elementy boli z HTML5 vylúčené?',
 			'answers' => array(
-				'a' => '.mil',
-				'b' => '.army',
-				'c' => '.arm',
-				'd' => '.war'
+				'a' => '&lt;frame&gt;, &lt;frameset&gt;, &lt;noframes&gt;',
+				'b' => '&lt;div&gt;, &lt;p&gt;, &lt;br&gt;',
+				'c' => '&lt;span&gt;, &lt;nav&gt;, &lt;hr&gt;',
+				'd' => 'žiadne'
 			),
 			'correct' => 'a'
 		),
 		3 => array(
-			'question' => 'Klávesová skratka CTRL + SHIFT + T v chrome:',
+			'question' => 'Aký jazyk nie je obsiahnutý v Bootstrape?',
 			'answers' => array(
-				'a' => 'Otvorí novú kartu.',
-				'b' => 'Zatvorí aktuálnu kartu.',
-				'c' => 'Zatvorí prehliadač.',
-				'd' => 'Otvorí naposledy zatvorenú kartu.'
+				'a' => 'CSS',
+				'b' => 'HTML',
+				'c' => 'JavaScript',
+				'd' => 'PYTHON'
 			),
 			'correct' => 'd'
 		),
 		4 => array(
-			'question' => 'Ktorý OS nepatrí do rodiny linuxov?',
+			'question' => 'Čo nedokážeme naprogramovať v PHP?',
 			'answers' => array(
-				'a' => 'OpenBSD',
-				'b' => 'UBUNTU',
-				'c' => 'KNOPPIX',
-				'd' => 'SLAX'
+				'a' => 'Natívnu aplikáciu pre počítač.',
+				'b' => 'Aplikáciu pre server Apache2.',
+				'c' => 'Aplikáciu pre server NGINX.',
+				'd' => 'Server - side aplikáciu.'
 			),
 			'correct' => 'a'
 		),
 		5 => array(
-			'question' => 'Aká je národná doména USA?',
+			'question' => 'Ktorá z uvedených možností nie je PHP framework?',
 			'answers' => array(
-				'a' => '.net',
-				'b' => '.com',
-				'c' => '.us',
-				'd' => '.org'
+				'a' => 'CodeIgniter',
+				'b' => 'Zend',
+				'c' => 'Electron',
+				'd' => 'Symfony'
 			),
 			'correct' => 'c'
 		),

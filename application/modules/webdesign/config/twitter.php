@@ -22,7 +22,7 @@ $config['webdesign_twitter_settings'] = array(
 );
 */
 
-//http://http://fhi-web.poriadne.sk/
+//http://fhi-web.poriadne.sk/
 $config['webdesign_twitter_settings'] = array(
 	'oauth_access_token' => '819949946854051840-jbpuKMhZDHEOw0rbwJOepcgtDfwLdKt',
 	'oauth_access_token_secret' => '6hD3Pyp6yvpbmGurtsDoEOuAswJarQNwropK5O3pduXI7',

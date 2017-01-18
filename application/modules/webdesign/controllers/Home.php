@@ -23,6 +23,7 @@ class Home extends MAIN_Controller {
 		$this->tpl->add_js('$(document).ready(function () { $(".player").mb_YTPlayer(); });', true);
 
 		$this->_active_nav('homepage');
+		$this->tpl->title('Twitter parser &amp; quiz webapp');
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/home/homepage', $data);
 		$this->load->view('footer');
@@ -46,6 +47,7 @@ class Home extends MAIN_Controller {
 		$this->tpl->add_js_src('webdesign/js/quiz.js', true);
 		$this->tpl->add_js("var ajax_quiz_url = '".site_url('webdesign/ajax/answer')."', quiz_result_url = '".site_url('webdesign/home/quiz_result')."';", true);
 
+		$this->tpl->title('Kvíz');
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/home/quiz', $data);
 		$this->load->view('footer');
@@ -72,6 +74,7 @@ class Home extends MAIN_Controller {
 		$this->tpl->add_js_src('webdesign/js/quiz_result.js', true);
 		$this->tpl->add_js("var ajax_send_email_url = '".site_url('webdesign/ajax/send_mail')."';", true);
 
+		$this->tpl->title('Výsledky kvízu');
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/home/quiz_result', $data);
 		$this->load->view('webdesign/modals/send_mail');

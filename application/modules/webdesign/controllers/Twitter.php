@@ -35,6 +35,7 @@ class Twitter extends MAIN_Controller {
 		$this->tpl->add_js_src('webdesign/js/twitter_tag.js', true);
 
 		$this->_active_nav($tag);
+		$this->tpl->title('#'.$tag.' z twitteru');
 		$this->load->view('header', $this->data);
 		$this->load->view('webdesign/twitter/tag', $data);
 		$this->load->view('footer');
