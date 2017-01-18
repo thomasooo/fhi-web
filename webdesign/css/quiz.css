@@ -66,17 +66,14 @@
 	-o-transition: all 0.3s ease-in-out;
 }
 
-/* netouchscreen */
-@media (hover:hover) {
-	.quiz-question-animation:hover{
-		z-index: 2;
-		box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+.quiz-question-animation:hover{
+	z-index: 2;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
 
-		transform: scale(1.1, 1.1);
-		-webkit-transform: scale(1.1, 1.1);
-		-moz-transform: scale(1.1, 1.1);
-		-o-transform: scale(1.1, 1.1);
-	}
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
 }
 
 /* touchscreen */
