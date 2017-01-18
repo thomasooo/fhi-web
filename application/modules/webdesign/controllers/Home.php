@@ -113,10 +113,10 @@ class Home extends MAIN_Controller {
 			}
 
 			$data = array(
-				$k.'. '.$v['question'],
-				'a. '.$v['answers']['a']."\n".'b. '.$v['answers']['b']."\n".'c. '.$v['answers']['c']."\n".'d. '.$v['answers']['d']."\n",
-				$v['your_answer'].'. '.$v['answers'][$v['your_answer']],
-				$v['correct_answer'].'. '.$v['answers'][$v['correct_answer']],
+				$k.'. '.html_entity_decode($v['question']),
+				'a. '.html_entity_decode($v['answers']['a'])."\n".'b. '.html_entity_decode($v['answers']['b'])."\n".'c. '.html_entity_decode($v['answers']['c'])."\n".'d. '.html_entity_decode($v['answers']['d'])."\n",
+				$v['your_answer'].'. '.html_entity_decode($v['answers'][$v['your_answer']]),
+				$v['correct_answer'].'. '.html_entity_decode($v['answers'][$v['correct_answer']]),
 				$correct
 			);
 
