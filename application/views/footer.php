@@ -12,13 +12,11 @@
 				</div>
 				<div class="col-md-4">
 					<h2>KDE NÁS NÁJDETE</h2>
-					<p>
-						<ul class="list-unstyled list-footer-black">
-							<li><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">2963 Charmaine Lane, Amarillo</a></li>
-							<li><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">806-517-7760</a></li>
-							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;mail@mail.com</a></li>
-						</ul>
-					</p>
+					<ul class="list-unstyled list-footer-black">
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">2963 Charmaine Lane, Amarillo</a></li>
+						<li><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">806-517-7760</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;mail@mail.com</a></li>
+					</ul>
 				</div>
 				<div class="col-md-4">
 					<h2>SLEDUJTE NÁS</h2>
